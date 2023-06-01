@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: #D87D4A;
+}
+
+.zx9 {
+    background-image: url(./assets/images/image_with_bg_elements.png);
+    background-position-y: -120px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.zx7 {
+    background-image: url(./assets/images/Bitmap_tablet-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnIntro:hover {
+    background: #FBAF85;
+}
+
+.btnWhite:hover {
+    background: #000;
+    color: white;
+}
+
+.btnBlck:hover {
+    background: white;
+    color: #000;
+}
+
+@media only screen and (min-width: 1280px) {
+    .zx9 {
+        background-image: url(./assets/images/image_with_bg_elements-desktop.png);
+        background-position-x: -150px;
+        background-position-y: 55px;
+        padding-top: 175px;
+        padding-bottom: 175px;
+        padding-right: 95px;
+    }
+
+    .zx7 {
+        background-size: cover;
+    }
+}
