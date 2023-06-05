@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="../input.css">
+    <link rel="stylesheet" href="../dist/output.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>audiophile</title>
+    <title>Headphones</title>
 </head>
 
 <body>
-    <header class="h-24 bg-[#101010] flex items-center justify-center fixed top-0">
+    <header class="h-24 bg-[#101010] flex items-center justify-center">
         <div class="container mx-auto px-5">
             <nav class="p-9 border-b-2 border-white flex items-center justify-between">
                 <i
                     class="bi bi-list font-bold text-[32px] text-white lg:hidden hover:text-[#D87D4A] cursor-pointer"></i>
 
-                <a href="#"><img src="./assets/icons/logo_phone.svg" alt="logo"></a>
+                <a href="./index.html"><img src="./assets/icons/logo_phone.svg" alt="logo"></a>
 
                 <ul class="hidden lg:flex gap-[34px]">
                     <li><a href="./index.html" class="link">Home</a></li>
@@ -40,117 +40,125 @@
         </div>
     </header>
 
-    <section id="intro" class="w-full h-[600px] md:h-[729px] bg-[#101010] flex items-center justify-between">
-        <div class="container mx-auto px-5 flex items-center justify-center lg:items-center lg:justify-between">
-            <div class="w-[328px] md:w-[372px] flex flex-col items-center lg:items-start">
-                <h2
-                    class="font-normal text-sm leading-[19px] text-center tracking-[10px] uppercase text-white opacity-50 lg:text-left">
-                    new product
-                </h2>
-                <h1
-                    class="mt-4 mb-6 md:mt-6 font-bold text-4xl md:text-[56px] leading-[60px]  text-center tracking-[1px] uppercase text-white lg:text-left">
-                    XX99 Mark II Headphone
-                </h1>
-                <p
-                    class="font-medium text-[15px] leading-[25px] text-center text-white opacity-75 lg:text-left mb-[28px]">
-                    Experience natural, lifelike audio and exceptional build quality made for the passionate music
-                    enthusiast.
-                </p>
-                <button
-                    class="px-[30px] py-[15px] bg-[#D87D4A] font-bold text-[13px] leading-[18px] tracking-[1px] uppercase text-white transition-[0.3s] btnIntro">
-                    See Product
-                </button>
-            </div>
-
-            <img src="./assets/images/Bitmap.png" class="hidden lg:flex h-[720px]" alt="intro image">
+    <section id="intro" class="w-full bg-[#101010] py-8 h-[100px] flex items-center px-10">
+        <div class="container mx-auto px-5">
+            <h1 class="font-bold text-[28px] leading-[38px] text-center tracking-[2px] uppercase text-white my-8">
+                Headphones</h1>
         </div>
     </section>
 
-    <section id="main" class="pt-[92px] pb-[120px] flex flex-col items-center justify-center">
-        <div class="container mx-auto px-5">
+    <section id="main" class="mx-10 pt-[64px] pb-[120px] md:py-[120px] lg:py-[160px]">
+        <div class="cotnainer mx-auto px-5 flex flex-col gap-[120px]">
+            <div class="flex flex-col gap-y-[120px] md:mt-[120px] lg:mt-[160px] mt-16 mb-[120px]">
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-[125px]">
+                    <div class="w-full lg:w-[540px] lg:h-[560px] pt-[41px] lg:pt-[65px] lg:pb-[110px] pb-[68px] bg-[#F1F1F1] flex justify-center">
+                        <img src="./assets/images/headphones_1.png" class="sm:block lg:hidden" alt="headphone_1">
+                        <img src="./assets/images/headphones-desktop_1.png" class="hidden lg:block w-[349px] h-[386px]" alt="headphone_1">
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start gap-6 md:w-[572px] lg:w-[445px]">
+                        <h2
+                            class="font-normal text-sm leading-[19px] text-center tracking-[10px] uppercase text-[#D87D4A] lg:text-left">
+                            new product
+                        </h2>
+                        <h1 class="font-bold text-[28px] leading-[38px] text-center tracking-[1px] uppercase lg:text-left">
+                            XX99 Mark II Headphones
+                        </h1>
+                        <p class="font-medium text-[15px] leading-[25px] text-center text-black opacity-50 lg:text-left mb-[28px]">
+                            The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by
+                            reproducing the balanced depth and precision of studio-quality sound.
+                        </p>
+                        <button
+                            class="px-[30px] py-[15px] bg-[#D87D4A] font-bold text-[13px] leading-[18px] tracking-[1px] uppercase text-white transition-[0.3s] btnIntro">
+                            See Product
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center lg:justify-center gap-8 lg:gap-[125px]">
+                    <div class="w-full pt-[41px] pb-[68px] bg-[#F1F1F1] flex justify-center lg:hidden">
+                        <img src="./assets/images/headphones_2.png" class="block lg:hidden" alt="headphone_1">
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start gap-6 md:w-[572px] lg:w-[445px]">
+                        <h1 class="font-bold text-[28px] leading-[38px] text-center tracking-[1px] uppercase lg:text-left">
+                            XX99 Mark I Headphones
+                        </h1>
+                        <p class="font-medium text-[15px] leading-[25px] text-center text-black opacity-50 lg:text-left mb-[28px]">
+                            As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for
+                            audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
+                        </p>
+                        <button
+                            class="px-[30px] py-[15px] bg-[#D87D4A] font-bold text-[13px] leading-[18px] tracking-[1px] uppercase text-white transition-[0.3s] btnIntro">
+                            See Product
+                        </button>
+                    </div>
+                    <div class="w-[540px] h-[560px] pt-[41px] pb-[68px] bg-[#F1F1F1] flex justify-center">
+                        <img src="./assets/images/headphones-desktop_2.png" class="hidden lg:block w-[295px] h-[386px]" alt="headphone_1">
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center lg:justify-center gap-8 lg:gap-[125px]">
+                    <div class="w-full lg:w-[540px] lg:h-[560px] pt-[41px] pb-[68px] bg-[#F1F1F1] flex justify-center">
+                        <img src="./assets/images/headphones_3.png" class="block lg:hidden" alt="headphone_1">
+                        <img src="./assets/images/headphones-desktop_3.png" class="hidden lg:block w-[372px] h-[389px]" alt="headphone_1">
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start gap-6 md:w-[572px] lg:w-[445px]">
+                        <h1 class="font-bold text-[28px] leading-[38px] text-center tracking-[1px] uppercase lg:text-left">
+                            XX59 Headphones
+                        </h1>
+                        <p class="font-medium text-[15px] leading-[25px] text-center text-black opacity-50 lg:text-left mb-[28px]">
+                            Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet
+                            durable versatile wireless headset is a brilliant companion at home or on the move.
+                        </p>
+                        <button
+                            class="px-[30px] py-[15px] bg-[#D87D4A] font-bold text-[13px] leading-[18px] tracking-[1px] uppercase text-white transition-[0.3s] btnIntro">
+                            See Product
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
             <div class="flex flex-wrap justify-center gap-[68px] md:gap-0 md:justify-between mb-[120px]">
                 <div
                     class="w-[327px] md:w-[223px] lg:w-[350px] bg-[#F1F1F1] pt-[88px] pb-[22px] flex flex-col items-center gap-[17px] relative">
                     <img src="./assets/images/section_image-phone1.png" class="absolute -top-[50px] left-[38%]"
                         alt="section_image_1">
                     <h1 class="font-bold text-[15px] leading-5 tracking-[1px] uppercase">Headphones</h1>
-                    <a href="./headphones.html" class="flex items-center gap-3">
-                        <p
-                            class="font-bold text-[13px] leading-[18px] tracing-[1px] uppercase opacity-50 hover:text-[#D87D4A]">
+                    <a href="" class="flex items-center gap-3">
+                        <p class="font-bold text-[13px] leading-[18px] tracing-[1px] uppercase opacity-50 hover:text-[#D87D4A]">
                             Shop</p>
                         <i class="bi bi-chevron-right font-bold text-base text-[#D87D4A]"></i>
                     </a>
                 </div>
-
+            
                 <div
                     class="w-[327px] md:w-[223px] lg:w-[350px] bg-[#F1F1F1] pt-[88px] pb-[22px] flex flex-col items-center gap-[17px] relative">
                     <img src="./assets/images/section_image-phone2.png" class="absolute -top-[50px] left-[38%]"
                         alt="section_image_1">
                     <h1 class="font-bold text-[15px] leading-5 tracking-[1px] uppercase">Headphones</h1>
                     <a href="" class="flex items-center gap-3">
-                        <p
-                            class="font-bold text-[13px] leading-[18px] tracing-[1px] uppercase opacity-50 hover:text-[#D87D4A]">
+                        <p class="font-bold text-[13px] leading-[18px] tracing-[1px] uppercase opacity-50 hover:text-[#D87D4A]">
                             Shop</p>
                         <i class="bi bi-chevron-right font-bold text-base text-[#D87D4A]"></i>
                     </a>
                 </div>
-
+            
                 <div
                     class="w-[327px] md:w-[223px] lg:w-[350px] bg-[#F1F1F1] pt-[88px] pb-[22px] flex flex-col items-center gap-[17px] relative">
                     <img src="./assets/images/section_image-phone3.png" class="absolute -top-[50px] left-[38%]"
                         alt="section_image_1">
                     <h1 class="font-bold text-[15px] leading-5 tracking-[1px] uppercase">Headphones</h1>
                     <a href="" class="flex items-center gap-3">
-                        <p
-                            class="font-bold text-[13px] leading-[18px] tracing-[1px] uppercase opacity-50 hover:text-[#D87D4A]">
+                        <p class="font-bold text-[13px] leading-[18px] tracing-[1px] uppercase opacity-50 hover:text-[#D87D4A]">
                             Shop</p>
                         <i class="bi bi-chevron-right font-bold text-base text-[#D87D4A]"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="flex flex-wrap gap-6 mb-[200px]">
-                <div
-                    class="zx9 w-full pt-[294px] pb-[55px] bg-[#D87D4A] flex flex-col items-center justify-center lg:items-end">
-                    <div class=" flex flex-col items-center justify-center lg:items-start">
-                        <h1
-                            class="font-bold text-4xl text-center tracking-[1px] uppercase text-white md:text-[56px] md:leading-[58px] lg:w-[350px] lg:text-left">
-                            ZX9 SPEAKER</h1>
-                        <p
-                            class="w-[280px] md:w-[350px] font-medium text-[15px] leading-[25px] text-center lg:text-left opacity-75 text-white my-6 lg:mb-10">
-                            Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
-                        </p>
-                        <button
-                            class="px-[30px] py-[15px] bg-black font-bold text-[13px] leading-[18px] tracking-[1px] uppercase text-white transition-[0.3s] btnBlck">See
-                            Product</button>
-                    </div>
-                </div>
-
-                <div class="zx7 w-full flex items-center pl-6 md:pl-[95px] h-[320px]">
-                    <div class="flex flex-col gap-8 w-[250px]">
-                        <h1 class="font-bold text-[28px] leading-[38px] tracking-[2px] uppercase">ZX7 SPEAKER</h1>
-                        <button class="w-[160px] px-[30px] py-[15px] border-2 border-black transition-[0.3s] btnWhite">See Product</button>
-                    </div>
-                </div>
-
-                <div class="w-full flex flex-wrap justify-center gap-6 md:justify-between lg:gap-[30px]">
-                    <div class="w-[327px] md:w-[339px] lg:w-[540px] ">
-                        <img src="./assets/images/image01.png" class="h-[200px] md:w-[339px] md:h-[320px] lg:w-[540px]"
-                            alt="">
-                    </div>
-
-                    <div
-                        class="w-[327px] h-[200px] md:w-[339px] md:h-[320px] lg:w-[540px] flex flex-col justify-center gap-6 pl-6">
-                        <h1 class="font-bold text-[28px] leading-[38px] tracking-[2px] uppercase">ZX7 SPEAKER</h1>
-                        <button class="w-[160px] px-[30px] py-[15px] border-2 border-black transition-[0.3s] btnWhite">See Product</button>
-                    </div>
-                </div>
-            </div>
-
             <div class="flex flex-col items-center gap-10 lg:flex-row lg:justify-between">
                 <img src="./assets/images/image02.png" class="md:hidden" alt="image02">
                 <img src="./assets/images/image02_tablet.png" class="hidden md:block lg:hidden" alt="image02">
-
+            
                 <div class="flex flex-col w-[327px] md:w-[573px] md:h-[270px] lg:w-[445px]  gap-8">
                     <h1
                         class="font-bold text-[28px] leading-[38px] text-center tracking-[1px] uppercase md:text-[40px] md:leading-[40px] lg:text-left">
@@ -164,7 +172,7 @@
                         audio equipment.
                     </p>
                 </div>
-
+            
                 <img src="./assets/images/image02_desktop.png" class="hidden lg:flex w-[540px] h-[588px]" alt="image02">
             </div>
         </div>
@@ -176,7 +184,7 @@
                 <a href="./index.html">
                     <img src="./assets/icons/logo_phone.svg" class="w-[143px]" alt="footer logo">
                 </a>
-
+    
                 <ul class="text-center flex flex-col md:flex-row gap-4 lg:flex">
                     <li><a href="./index.html" class="link">Home</a></li>
                     <li><a href="./headphones.html" class="link">Headphones</a></li>
@@ -184,26 +192,27 @@
                     <li><a href="" class="link">Earphones</a></li>
                 </ul>
             </div>
-
+    
             <div class="mt-12 flex justify-center md:justify-between">
-                <p class="w-[327px] font-medium text-[15px] leading-[25px] text-center text-white opacity-50 md:text-left md:w-full lg:w-[540px]">
+                <p
+                    class="w-[327px] font-medium text-[15px] leading-[25px] text-center text-white opacity-50 md:text-left md:w-full lg:w-[540px]">
                     Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and
                     sound specialists who are devoted to helping you get the most out of personal audio. Come and visit
                     our demo facility - we’re open 7 days a week.
                 </p>
-                
+    
                 <ul class="hidden font-bold text-3xl text-white lg:flex gap-4 lg:items-end transition-[0.3s]">
                     <li><a href=""><i class='bx bxl-facebook-square hover:text-[#D87D4A]'></i></a></li>
                     <li><a href=""><i class='bx bxl-twitter hover:text-[#D87D4A]'></i></a></li>
                     <li><a href=""><i class='bx bxl-instagram hover:text-[#D87D4A]'></i></a></li>
                 </ul>
             </div>
-
+    
             <div class="mt-12 flex flex-col items-center gap-12 md:flex-row md:justify-between">
                 <p class="font-medium text-[15px] leading-[25px] text-center text-white opacity-50">
                     Copyright 2021. All Rights Reserved
                 </p>
-
+    
                 <ul class="font-bold text-3xl text-white flex gap-4 lg:hidden transition-[0.3s]">
                     <li><a href=""><i class='bx bxl-facebook-square hover:text-[#D87D4A]'></i></a></li>
                     <li><a href=""><i class='bx bxl-twitter hover:text-[#D87D4A]'></i></a></li>
